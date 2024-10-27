@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.plantel = void 0;
+var jugador_1 = require("./jugador");
+var directortecnico_1 = require("./directortecnico");
+var medicodeportivo_1 = require("./medicodeportivo");
+var seleccion_1 = require("./seleccion");
+var messi = new jugador_1.Jugador(38, 'Messi', 'delantero', 38, 250);
+var curandero = new medicodeportivo_1.MedicoDeportivo(29, 'Roberto', 'Masajista', 1);
+var director = new directortecnico_1.DirectorTecnico(45, 'Diego', 'Intermedia');
+var plantel = new seleccion_1.Seleccion(director, curandero);
+exports.plantel = plantel;
+plantel.agregarJugador(messi);
+plantel.agregarMedicoDeportivo(curandero);
+plantel.listarJugadores();
