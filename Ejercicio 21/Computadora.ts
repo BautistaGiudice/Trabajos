@@ -15,7 +15,6 @@ export class Computadora {
         this.sistemaOperativo = builder.sistemaOperativo;
     }
 
-    // Método para mostrar las especificaciones de la computadora
     public mostrarEspecificaciones(): void {
         console.log(`Procesador: ${this.procesador}`);
         console.log(`RAM: ${this.ram} GB`);

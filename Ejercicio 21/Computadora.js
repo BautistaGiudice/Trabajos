@@ -9,7 +9,6 @@ var Computadora = /** @class */ (function () {
         this.tarjetaGrafica = builder.tarjetaGrafica;
         this.sistemaOperativo = builder.sistemaOperativo;
     }
-    // Método para mostrar las especificaciones de la computadora
     Computadora.prototype.mostrarEspecificaciones = function () {
         console.log("Procesador: ".concat(this.procesador));
         console.log("RAM: ".concat(this.ram, " GB"));
